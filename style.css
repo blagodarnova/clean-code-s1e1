@@ -39,7 +39,7 @@ body {
 }
 }
 
-.centered-main-page-element {
+.add-item {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -49,7 +49,7 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.add-item__block{
     display: flex;
 }
 
@@ -66,8 +66,7 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for='new-task'] {
+.title{
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -76,6 +75,7 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
+
 input[type="text"] {
     margin: 0;
     font-size: 18px;
@@ -88,16 +88,18 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 input[type="text"]:focus {
     color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
+.add-item__title {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+
+.add-item__task {
     width: 318px;
 }
 
