@@ -44,25 +44,27 @@ body {
     width: 500px;
     margin: 0 auto 0;
 }
+
 .task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
+
 .add-item__block{
     display: flex;
 }
 
-button {
+.button {
     background: none;
     border: 0px;
     color: #888;
     font-size: 15px;
     width: 60px;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     cursor: pointer;
 }
-button:hover {
+.button:hover {
     color: #3a3A3a;
 }
 /* Heading */
@@ -150,15 +152,15 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.title__task  {
     display:none
 }
 
-ul li.editMode input[type=text] {
+.editMode .input__task  {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+.editMode .title__task  {
     display:none;
 }
