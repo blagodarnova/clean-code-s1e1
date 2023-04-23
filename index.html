@@ -30,7 +30,7 @@
                 <input class="input__task task" type="text">
                 <button class="button edit">Edit</button>
                 <button class="button button__delete">
-                    <img class="button__delete__img" src="./remove.svg">
+                    <img class="button__delete__img" src="./remove.svg" alt="remove">
                 </button>
             </li>
             <li class="list-item editMode">
@@ -39,15 +39,26 @@
                 <input class="input__task task" type="text" value="Go Shopping">
                 <button class="button edit">Save</button>
                 <button class="button button__delete">
-                    <img class="button__delete__img" src="./remove.svg">
+                    <img class="button__delete__img" src="./remove.svg" alt="remove">
                 </button>
             </li>
     </section>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
+</ul>
+<section class="completed">
+<h3 class="title">Completed</h3>
+<ul class="completed-tasks">
+    <li class="list-item">
+        <input class="checkbox" type="checkbox" checked>
+        <label class="title__task task title__task__comleted">See the Doctor</label>
+        <input class="input__task task" type="text">
+        <button class="button edit">Edit</button>
+        <button class="button button__delete">
+            <img class="button__delete__img" src="./remove.svg" alt="remove">
+        </button>
 </li>
 </ul>
-
+</section>
 </main>
-<script type="text/javascript" SRC="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
