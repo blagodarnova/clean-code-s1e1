@@ -131,7 +131,7 @@ input[type="text"]:focus {
     width: 226px;
 }
 
-.list-item >  input[type="text"] {
+.input__task {
     width: 226px
 }
 
@@ -146,21 +146,23 @@ input[type="text"]:focus {
 }
 
 /* Completed */
-ul#completed-tasks label {
-    text-decoration: line-through
+.title__task__comleted  {
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.title__task  {
+.input__task  {
     display:none
 }
 
-.editMode .input__task  {
+.editMode
+.input__task  {
     display:inline-block;
     width:224px
 }
 
-.editMode .title__task  {
+.editMode
+.title__task  {
     display:none;
 }
