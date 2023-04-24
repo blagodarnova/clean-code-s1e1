@@ -156,13 +156,13 @@ body {
     display:none
 }
 
-.editMode
+.list-item__edit
 .input__task  {
     display:inline-block;
     width:224px
 }
 
-.editMode
+.list-item__edit
 .title__task  {
     display:none;
 }
