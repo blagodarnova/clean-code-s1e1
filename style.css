@@ -64,9 +64,11 @@ body {
     font-family: 'Lato', sans-serif;
     cursor: pointer;
 }
+
 .button:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
 .title{
     color: #333;
