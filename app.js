@@ -10,8 +10,8 @@
 
 var taskInput=document.querySelector(".add-item__task");//Add a new task.
 var addButton=document.querySelector(".add-item__button");//first button
-var incompleteTaskHolder=document.querySelector(".incomplete-tasks");//ul of #incompleteTasks
-var completedTasksHolder=document.querySelector(".completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.querySelector(".incomplete-tasks");//ul of .incomplete-tasks
+var completedTasksHolder=document.querySelector(".completed-tasks");//.completed-tasks
 
 
 //New task list item
@@ -99,7 +99,7 @@ var editTask=function(){
     //If class of the parent is .editmode
     if(containsClass){
 
-        //switch to .editmode
+        //switch to .list-item__edit
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
@@ -130,7 +130,7 @@ var deleteTask=function(){
 var taskCompleted=function(){
     console.log("Complete Task...");
 
-    //Append the task list item to the #completed-tasks
+    //Append the task list item to the .completed-tasks
     var listItem=this.parentNode;
     listItem.children[1].classList.add('title__task__comleted')
     completedTasksHolder.appendChild(listItem);
@@ -143,7 +143,7 @@ var taskIncomplete=function(){
     console.log("Incomplete Task...");
 //Mark task as incomplete.
     //When the checkbox is unchecked
-    //Append the task list item to the #incompleteTasks.
+    //Append the task list item to the .incomplete-tasks.
     var listItem=this.parentNode;
     listItem.children[1].classList.remove('title__task__comleted')
     incompleteTaskHolder.appendChild(listItem);
